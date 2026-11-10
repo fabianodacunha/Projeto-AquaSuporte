@@ -1,0 +1,141 @@
+/* Dando uma resetada nos CSS*/
+body, h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+}
+/* Cabeça do site */
+#cabesa{
+    height: 8vh;
+    width: 100%;
+    color: #FFAA5C;
+    background-color: #007F86;
+    justify-content: center;
+    display: flex;
+    h1{
+        font-size: 5vh;
+        font-family: 'Montserrat';
+        margin: 6px;
+    }
+}
+/* Ca precise de mais de um negocio ta ai*/
+#principal {
+    display: flex;
+    min-height: 92vh;
+}
+
+/* Menu que vai esta com conteudo na principal*/
+#menu{
+    width: 15vw;
+    color: #FAF3E5;
+    background-color: #00B8A9;
+    display:flex;
+    justify-content: center;
+    h2{
+        font-size: 5vh;
+        margin: 8px;
+    }
+}
+
+#final{
+    height: 8vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: #007F86;
+    footer{
+        font-size: 3vh;
+        margin: 25px;
+    }
+}
+
+/* Conteudo porem vai estar na principal ocupando espaço com o menu*/
+#conteudo{
+    width: 85%;
+    display: flex;
+    color: #FAF3E5;
+    background-color: #8EDBD0;
+    display:flex;
+    justify-content: center;
+
+    background-image: url("../IMAGENS/plano-de-fundo2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Conteúdo principal da Home */
+#conteudosolo {
+    width: 97.85%;
+    min-height: 92vh;
+    background-color: transparent;
+    background-color: #8EDBD0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 40px 20px;
+
+    background-image: url("../IMAGENS/plano-de-fundo2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Texto de apresentação */
+#textoc {
+    width: 80%;
+    max-width: 1000px;
+    color: #FAF3E5;
+    text-align: center;
+    font-size: 2vh;
+}
+
+/* Área da imagem e descrição */
+#areahome {
+    width: 80%;
+    max-width: 1000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Imagem */
+#areahome img {
+    width: 40%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Descrição */
+#areahome p {
+    color: #FAF3E5;
+    font-size: 20px;
+}
+
+.meubotao {
+    background-color: #007bff; /* Cor de fundo */
+    color: white;              /* Cor do texto */
+    padding: 12px 24px;        /* Espaçamento interno */
+    border: none;              /* Remove borda padrão */
+    border-radius: 5px;        /* Bordas arredondadas */
+    font-size: 16px;           /* Tamanho da fonte */
+    cursor: pointer;           /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
+    a{
+        font-size: 3vh;
+    }
+}
+
+/* Efeito Hover (ao passar o mouse) */
+.meu-botao:hover {
+    background-color: #0056b3; /* Cor mais escura */
+}
+
