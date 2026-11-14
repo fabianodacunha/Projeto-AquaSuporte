@@ -1,20 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Informações da página -->
-    <title>AquaSuporte-Loja</title><!-- Nome -->
-    <meta name="description" content="Aba de produtos."> <!-- Descrição -->
-    <!-- Autor -->
+    <title>AquaSuporte - Loja & Recomendações</title>
+    <meta name="description" content="Produtos essenciais e onde encontrar peixes em João Pessoa.">
     <meta name="author" content="Fabiano da Cunha">
     <!-- Ícone da página -->
     <link rel="icon" href="../IMAGENS/LogoAS.png" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/estilo.css">
-    <meta>
+    <link rel="stylesheet" href="../CSS/loja.css">
 </head>
+
 <body>
-    
+    <!-- Cabeçalho com Menu Superior -->
+    <header id="cabesa">
+        <h1>AquaSuporte</h1>
+        <nav class="nav-links">
+            <a href="home.html">Início</a>
+            <a href="calculos.html">Calculadoras</a>
+            <a href="catalogopeixe.html">Catálogo</a>
+            <a href="guias.html">Guias</a>
+            <a href="loja.html" class="active">Loja</a>
+        </nav>
+    </header>
+
+    <!-- Seção de Título do Topo -->
+    <section id="topo-loja">
+        <div class="topo-container">
+            <h2>Loja & recomendações</h2>
+            <p>Produtos essenciais e onde encontrar peixes em João Pessoa.</p>
+        </div>
+    </section>
+
+    <!-- Seção Principal da Loja -->
+    <main id="conteudo-loja">
+        <div class="loja-container">
+            
+            <h3 class="secao-titulo">Produtos</h3>
+
+            <!-- Grade de Produtos (3 colunas) -->
+            <div class="produtos-grid">
+
+                <!-- 1. Kit teste pH -->
+                <div class="produto-card">
+                    <span class="produto-categoria">Testes</span>
+                    <div class="produto-info">
+                        <h4>Kit teste pH</h4>
+                        <p>Reagente colorimétrico, ~100 testes.</p>
+                    </div>
+                    <div class="produto-rodape">
+                        <span class="preco">R$ 34,90</span>
+                        <button class="btn-interesse">Tenho interesse</button>
+                    </div>
+                </div>
+
+                <!-- 2. Kit teste amônia -->
+                <div class="produto-card">
+                    <span class="produto-categoria">Testes</span>
+                    <div class="produto-info">
+                        <h4>Kit teste amônia</h4>
+                        <p>Mede NH3/NH4 de 0 a 5 ppm.</p>
+                    </div>
+                    <div class="produto-rodape">
+                        <span class="preco">R$ 39,90</span>
+                        <button class="btn-interesse">Tenho interesse</button>
+                    </div>
+                </div>
+
+                <!-- 3. Kit teste KH/GH -->
+                <div class="produto-card">
+                    <span class="produto-categoria">Testes</span>
+                    <div class="produto-info">
+                        <h4>Kit teste KH/GH</h4>
+                        <p>Dureza carbonatada e geral.</p>
+                    </div>
+                    <div class="produto-rodape">
+                        <span class="preco">R$ 49,90</span>
+                        <button class="btn-interesse">Tenho interesse</button>
+                    </div>
+                </div>
+
+                <!-- 4. Anticloro 120 ml -->
+                <div class="produto-card">
+                    <span class="produto-categoria">Condicionadores</span>
+                    <div class="produto-info">
+                        <h4>Anticloro 120 ml</h4>
+                        <p>Neutraliza cloro e cloraminas.</p>
+                    </div>
+                    <div class="produto-rodape">
+                        <span class="preco">R$ 19,90</span>
+                        <button class="btn-interesse">Tenho interesse</button>
+                    </div>
+                </div>
+
+                <!-- 5. Acelerador biológico -->
+                <div class="produto-card">
+                    <span class="produto-categoria">Condicionadores</span>
+                    <div class="produto-info">
+                        <h4>Acelerador biológico</h4>
+                        <p>Bactérias para ciclagem rápida.</p>
+                    </div>
+                    <div class="produto-rodape">
+                        <span class="preco">R$ 44,90</span>
+                        <button class="btn-interesse">Tenho interesse</button>
+                    </div>
+                </div>
+
+                <!-- 6. Filtro hang-on 1000 L/h -->
+                <div class="produto-card">
+                    <span class="produto-categoria">Equipamentos</span>
+                    <div class="produto-info">
+                        <h4>Filtro hang-on 1000 L/h</h4>
+                        <p>Para aquários de até 200 L.</p>
+                    </div>
+                    <div class="produto-rodape">
+                        <span class="preco">R$ 159,90</span>
+                        <button class="btn-interesse">Tenho interesse</button>
+                    </div>
+                </div>
+
+                <!-- 7. Termostato 100 W -->
+                <div class="produto-card">
+                    <span class="produto-categoria">Equipamentos</span>
+                    <div class="produto-info">
+                        <h4>Termostato 100 W</h4>
+                        <p>Aquecedor com regulagem.</p>
+                    </div>
+                    <div class="produto-rodape">
+                        <span class="preco">R$ 79,90</span>
+                        <button class="btn-interesse">Tenho interesse</button>
+                    </div>
+                </div>
+
+                <!-- 8. Substrato fértil 5 kg -->
+                <div class="produto-card">
+                    <span class="produto-categoria">Substratos</span>
+                    <div class="produto-info">
+                        <h4>Substrato fértil 5 kg</h4>
+                        <p>Ideal para aquários plantados.</p>
+                    </div>
+                    <div class="produto-rodape">
+                        <span class="preco">R$ 89,90</span>
+                        <button class="btn-interesse">Tenho interesse</button>
+                    </div>
+                </div>
+
+                <!-- 9. Ração em flocos tropical -->
+                <div class="produto-card">
+                    <span class="produto-categoria">Alimentação</span>
+                    <div class="produto-info">
+                        <h4>Ração em flocos tropical</h4>
+                        <p>Para peixes de comunidade.</p>
+                    </div>
+                    <div class="produto-rodape">
+                        <span class="preco">R$ 24,90</span>
+                        <button class="btn-interesse">Tenho interesse</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <div id="final">
+        <footer>© 2026 AquaSuporte</footer>
+    </div>
 </body>
+
 </html>

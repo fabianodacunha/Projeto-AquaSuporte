@@ -1,85 +1,75 @@
-/* Dando uma resetada nos CSS*/
-body, h1, h2, h3, h4, h5, h6, p{
+/* Dando uma resetada nos CSS */
+body, h1, h2, h3, h4, h5, h6, p {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat';
-
+    font-family: 'Montserrat', sans-serif;
 }
-/* Cabeça do site */
-#cabesa{
-    height: 8vh;
+
+body {
+    background-color: #8EDBD0;
+}
+
+html, body { 
     width: 100%;
-    color: #FFAA5C;
-    background-color: #007F86;
-    justify-content: center;
-    display: flex;
-    h1{
-        font-size: 5vh;
-        font-family: 'Montserrat';
-        margin: 6px;
-    }
-}
-/* Ca precise de mais de um negocio ta ai*/
-#principal {
-    display: flex;
-    min-height: 92vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Menu que vai esta com conteudo na principal*/
-#menu{
-    width: 15vw;
-    color: #FAF3E5;
-    background-color: #00B8A9;
-    display:flex;
-    justify-content: center;
-    h2{
-        font-size: 5vh;
-        margin: 8px;
-    }
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-#final{
-    height: 8vh;
+/* Cabeçalho do site com Menu de Navegação */
+#cabesa {
+    height: 10vh;
     width: 100%;
-    justify-content: center;
-    display: flex;
     background-color: #007F86;
-    footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    /* Título do cabeçalho */
+    h1 {
         font-size: 3vh;
-        margin: 25px;
+        color: #FFAA5C;
     }
 }
 
-/* Conteudo porem vai estar na principal ocupando espaço com o menu*/
-#conteudo{
-    width: 85%;
+/* Links do menu no topo */
+.nav-links {
     display: flex;
-    color: #FAF3E5;
-    background-color: #8EDBD0;
-    display:flex;
-    justify-content: center;
+    gap: 20px;
 
-    background-image: url("../IMAGENS/plano-de-fundo2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* Links individuais da navegação */
+    a {
+        color: #FAF3E5;
+        text-decoration: none;
+        font-size: 2vh;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 20px;
+        transition: background-color 0.3s;
+
+        /* Estado de hover e ativo dos links */
+        &:hover, &.active {
+            background-color: #00B8A9;
+        }
+    }
 }
-/* Conteúdo principal da Home */
-#conteudosolo {
-    width: 97.85%;
-    min-height: 92vh;
-    background-color: transparent;
-    background-color: #8EDBD0;
 
+/* Conteúdo Principal */
+#conteudosolo {
+    width: 100%;
+    min-height: 82vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    gap: 50px;
-
-    padding: 40px 20px;
-
+    gap: 40px;
+    padding: 40px 15px; 
     background-image: url("../IMAGENS/plano-de-fundo2.png");
     background-size: cover;
     background-position: center;
@@ -88,54 +78,105 @@ body, h1, h2, h3, h4, h5, h6, p{
 
 /* Texto de apresentação */
 #textoc {
-    width: 80%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 900px;
     color: #FAF3E5;
     text-align: center;
-    font-size: 2vh;
-}
+    padding: 0 10px;
 
-/* Área da imagem e descrição */
-#areahome {
-    width: 80%;
-    max-width: 1000px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
-/* Imagem */
-#areahome img {
-    width: 40%;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-}
-
-/* Descrição */
-#areahome p {
-    color: #FAF3E5;
-    font-size: 20px;
-}
-
-.meubotao {
-    background-color: #007bff; /* Cor de fundo */
-    color: white;              /* Cor do texto */
-    padding: 12px 24px;        /* Espaçamento interno */
-    border: none;              /* Remove borda padrão */
-    border-radius: 5px;        /* Bordas arredondadas */
-    font-size: 16px;           /* Tamanho da fonte */
-    cursor: pointer;           /* Cursor de mão ao passar o mouse */
-    transition: background-color 0.3s ease; /* Transição suave */
-    a{
-        font-size: 3vh;
+    /* Título dentro do bloco de texto */
+    h2 {
+        font-size: 2.5vh;
+        font-weight: 400;
+        line-height: 1.5;
     }
 }
 
-/* Efeito Hover (ao passar o mouse) */
-.meu-botao:hover {
-    background-color: #0056b3; /* Cor mais escura */
+/* Seções de Cards (Imagem + Botão/Descrição) */
+.card-secao {
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    /* Inversão da ordem dos itens do card */
+    &.inverso {
+        flex-direction: row-reverse;
+    }
+
+    /* Imagem dentro do card */
+    img {
+        width: 45%;
+        height: 180px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
 }
 
+/* Estilo do bloco de texto/botão dentro do card */
+.card-info {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    /* Título do card */
+    h3 {
+        color: #007F86;
+        font-size: 24px;
+    }
+
+    /* Descrição do card */
+    p {
+        color: #555;
+        font-size: 15px;
+    }
+}
+
+/* Botões estilizados */
+.meubotao {
+    display: inline-block;
+    background-color: #FFAA5C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+
+    /* Link interno do botão */
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    /* Estado de hover do botão */
+    &:hover {
+        background-color: #e5954b;
+    }
+}
+
+/* Rodapé */
+#final {
+    height: 8vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #007F86;
+    color: #FAF3E5;
+
+    /* Texto do rodapé */
+    footer {
+        font-size: 2vh;
+    }
+}

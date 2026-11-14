@@ -1,0 +1,170 @@
+/* Bloco do topo do catálogo */
+#topo-catalogo {
+    background-color: #002D31;
+    width: 100%;
+    padding: 60px 40px;
+    color: #FAF3E5;
+
+    /* Container centralizado dentro do topo */
+    .topo-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Título dentro do topo */
+    h2 {
+        font-size: 45px;
+        color: #FAF3E5;
+        margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Parágrafo dentro do topo */
+    p {
+        font-size: 16px;
+        color: #A3C1C4;
+        max-width: 600px;
+        line-height: 1.5;
+    }
+}
+
+/* Seção principal do catálogo */
+#conteudo-catalogo {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #EBF4F3;
+    display: flex;
+    justify-content: center;
+
+    /* Container principal alinhado e empilhado */
+    .catalogo-container {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Caixa de pesquisa */
+.search-box {
+    input {
+        width: 100%;
+        padding: 16px 20px;
+        background-color: #FFFFFF;
+        border: 1px solid #D1E5E4;
+        border-radius: 12px;
+        font-size: 16px;
+        color: #002D31;
+        outline: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+        transition: border-color 0.3s;
+
+        /* Estado de foco da pesquisa */
+        &:focus {
+            border-color: #00B8A9;
+        }
+    }
+}
+
+/* Grade de cards de peixes (3 colunas) */
+.peixes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card individual de cada peixe */
+.peixe-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgba(0, 184, 169, 0.1);
+
+    /* Cabeçalho superior do card */
+    .card-header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    /* Nome principal do peixe */
+    h3 {
+        font-size: 22px;
+        color: #002D31;
+        margin-bottom: 2px;
+    }
+
+    /* Nome científico em itálico */
+    .cientifico {
+        font-size: 13px;
+        font-style: italic;
+        color: #777;
+    }
+
+    /* Badges de comportamento */
+    .badge {
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+
+        /* Variação pacífico */
+        &.pacifico {
+            background-color: #E2F4EE;
+            color: #00875A;
+        }
+
+        /* Variação semi-agressivo */
+        &.semi-agressivo {
+            background-color: #FFEED9;
+            color: #D97706;
+        }
+
+        &.territorial {
+            background-color: #ffe7d9;
+            color: #e73802;
+        }
+    }
+
+    /* Texto descritivo do peixe */
+    .descricao-peixe {
+        font-size: 14px;
+        color: #444;
+        line-height: 1.4;
+        margin-bottom: 5px;
+    }
+
+    /* Grade interna de detalhes técnicos */
+    .detalhes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        .detalhe-item {
+            background-color: #F4F9F9;
+            padding: 10px 12px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            /* Rótulo do dado técnico */
+            .label {
+                font-size: 11px;
+                color: #666;
+            }
+
+            /* Valor do dado técnico */
+            .valor {
+                font-size: 13px;
+                font-weight: 600;
+                color: #002D31;
+            }
+        }
+    }
+}

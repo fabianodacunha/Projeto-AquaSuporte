@@ -1,20 +1,362 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Informações da página -->
-    <title>AquaSuporte-CatalogoPeixes</title><!-- Nome -->
-    <meta name="description" content="Aba do catalogo de peixes."> <!-- Descrição -->
-    <!-- Autor -->
+    <title>AquaSuporte - Catálogo de Peixes</title>
+    <meta name="description" content="Catálogo completo de espécies de peixes para aquário de água doce.">
     <meta name="author" content="Fabiano da Cunha">
     <!-- Ícone da página -->
     <link rel="icon" href="../IMAGENS/LogoAS.png" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/estilo.css">
-    <meta>
+    <link rel="stylesheet" href="../CSS/catalogo.css">
 </head>
+
 <body>
-    
-</body>
-</html>
+    <!-- Cabeçalho com Menu Superior -->
+    <header id="cabesa">
+        <h1>AquaSuporte</h1>
+        <nav class="nav-links">
+            <a href="home.html">Início</a>
+            <a href="calculos.html">Calculadoras</a>
+            <a href="catalogopeixe.html" class="active">Catálogo</a>
+            <a href="guias.html">Guias</a>
+            <a href="loja.html">Loja</a>
+        </nav>
+    </header>
+
+    <!-- Seção de Título do Topo -->
+    <section id="topo-catalogo">
+        <div class="topo-container">
+            <h2>Catálogo de peixes</h2>
+            <p>Conheça as necessidades de cada espécie antes de levar para casa.</p>
+        </div>
+    </section>
+
+    <!-- Seção Principal do Catálogo -->
+    <main id="conteudo-catalogo">
+        <div class="catalogo-container">
+            
+            <!-- Barra de Pesquisa -->
+            <div class="search-box">
+                <input type="text" id="filtro-peixes" placeholder="Buscar por nome ou família...">
+            </div>
+
+            <!-- Grade de Peixes -->
+            <div class="peixes-grid">
+
+<!-- Card 2: Acará Bandeira -->
+                <div class="peixe-card">
+                    <div class="card-header-top">
+                        <div>
+                            <h3>Acará Bandeira</h3>
+                            <span class="cientifico">Pterophyllum scalare</span>
+                        </div>
+                        <span class="badge semi-agressivo">Semi-agressivo</span>
+                    </div>
+                    <p class="descricao-peixe">Majestoso e elegante, nada de forma imposta entre plantas altas e troncos.</p>
+                    
+                    <div class="detalhes-grid">
+                        <div class="detalhe-item">
+                            <span class="label">Família</span>
+                            <span class="valor">Cichlidae</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Origem</span>
+                            <span class="valor">Bacia Amazônica</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">pH</span>
+                            <span class="valor">6,0 – 7,4</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Dureza</span>
+                            <span class="valor">3 – 10 dGH</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Aquário</span>
+                            <span class="valor">150 L+</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Tamanho</span>
+                            <span class="valor">15 cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Betta Splendens -->
+                <div class="peixe-card">
+                    <div class="card-header-top">
+                        <div>
+                            <h3>Betta</h3>
+                            <span class="cientifico">Betta splendens</span>
+                        </div>
+                        <span class="badge territorial">Territorial</span>
+                    </div>
+                    <p class="descricao-peixe">Conhecido pelas nadadeiras longas e cores vibrantes; machos devem ser mantidos sozinhos.</p>
+                    
+                    <div class="detalhes-grid">
+                        <div class="detalhe-item">
+                            <span class="label">Família</span>
+                            <span class="valor">Osphronemidae</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Origem</span>
+                            <span class="valor">Sudeste Asiático</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">pH</span>
+                            <span class="valor">6,5 – 7,5</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Dureza</span>
+                            <span class="valor">5 – 15 dGH</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Aquário</span>
+                            <span class="valor">20 L+</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Tamanho</span>
+                            <span class="valor">6 cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Guppy (Lebiste) -->
+                <div class="peixe-card">
+                    <div class="card-header-top">
+                        <div>
+                            <h3>Guppy (Lebiste)</h3>
+                            <span class="cientifico">Poecilia reticulata</span>
+                        </div>
+                        <span class="badge pacifico">Pacífico</span>
+                    </div>
+                    <p class="descricao-peixe">Muito ativo, resistente e colorido, ideal para aquários comunitários plantados.</p>
+                    
+                    <div class="detalhes-grid">
+                        <div class="detalhe-item">
+                            <span class="label">Família</span>
+                            <span class="valor">Poeciliidae</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Origem</span>
+                            <span class="valor">América do Sul (Norte)</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">pH</span>
+                            <span class="valor">7,0 – 8,0</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Dureza</span>
+                            <span class="valor">8 – 12 dGH</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Aquário</span>
+                            <span class="valor">40 L+</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Tamanho</span>
+                            <span class="valor">5 cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Corydora Bronze -->
+                <div class="peixe-card">
+                    <div class="card-header-top">
+                        <div>
+                            <h3>Corydora Bronze</h3>
+                            <span class="cientifico">Corydoras aeneus</span>
+                        </div>
+                        <span class="badge pacifico">Pacífico</span>
+                    </div>
+                    <p class="descricao-peixe">Peixe de fundo sociável que vive em grupos, excelente para revirar o substrato.</p>
+                    
+                    <div class="detalhes-grid">
+                        <div class="detalhe-item">
+                            <span class="label">Família</span>
+                            <span class="valor">Callichthyidae</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Origem</span>
+                            <span class="valor">América do Sul</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">pH</span>
+                            <span class="valor">6,0 – 7,5</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Dureza</span>
+                            <span class="valor">2 – 12 dGH</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Aquário</span>
+                            <span class="valor">60 L+</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Tamanho</span>
+                            <span class="valor">7 cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Acará Disco -->
+                <div class="peixe-card">
+                    <div class="card-header-top">
+                        <div>
+                            <h3>Acará Disco</h3>
+                            <span class="cientifico">Symphysodon aequifasciatus</span>
+                        </div>
+                        <span class="badge pacifico">Pacífico</span>
+                    </div>
+                    <p class="descricao-peixe">Considerado o "rei do aquário", exige água quente, muito limpa e companhia de sua espécie.</p>
+                    
+                    <div class="detalhes-grid">
+                        <div class="detalhe-item">
+                            <span class="label">Família</span>
+                            <span class="valor">Cichlidae</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Origem</span>
+                            <span class="valor">Bacia Amazônica</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">pH</span>
+                            <span class="valor">5,5 – 6,8</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Dureza</span>
+                            <span class="valor">1 – 5 dGH</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Aquário</span>
+                            <span class="valor">200 L+</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Tamanho</span>
+                            <span class="valor">20 cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: Kinguio (Peixe Dourado) -->
+                <div class="peixe-card">
+                    <div class="card-header-top">
+                        <div>
+                            <h3>Kinguio</h3>
+                            <span class="cientifico">Carassius auratus</span>
+                        </div>
+                        <span class="badge pacifico">Pacífico</span>
+                    </div>
+                    <p class="descricao-peixe">Clássico peixe de água fria, dócil e robusto, mas que produz bastante matéria orgânica.</p>
+                    
+                    <div class="detalhes-grid">
+                        <div class="detalhe-item">
+                            <span class="label">Família</span>
+                            <span class="valor">Cyprinidae</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Origem</span>
+                            <span class="valor">Ásia Oriental</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">pH</span>
+                            <span class="valor">7,0 – 7,8</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Dureza</span>
+                            <span class="valor">5 – 15 dGH</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Aquário</span>
+                            <span class="valor">120 L+</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Tamanho</span>
+                            <span class="valor">25 cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8: Ramirezi -->
+                <div class="peixe-card">
+                    <div class="card-header-top">
+                        <div>
+                            <h3>Ramirezi</h3>
+                            <span class="cientifico">Mikrogeophagus ramirezi</span>
+                        </div>
+                        <span class="badge pacifico">Pacífico</span>
+                    </div>
+                    <p class="descricao-peixe">Ciclídeo anão muito colorido, ótimo para aquários plantados com pequenos cardumes.</p>
+                    
+                    <div class="detalhes-grid">
+                        <div class="detalhe-item">
+                            <span class="label">Família</span>
+                            <span class="valor">Cichlidae</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Origem</span>
+                            <span class="valor">Bacia do Rio Orinoco</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">pH</span>
+                            <span class="valor">5,5 – 7,0</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Dureza</span>
+                            <span class="valor">2 – 8 dGH</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Aquário</span>
+                            <span class="valor">60 L+</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Tamanho</span>
+                            <span class="valor">7 cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9: Cascudo Comum / Ancistrus -->
+                <div class="peixe-card">
+                    <div class="card-header-top">
+                        <div>
+                            <h3>Cascudo Ancistrus</h3>
+                            <span class="cientifico">Ancistrus cirrhosus</span>
+                        </div>
+                        <span class="badge pacifico">Pacífico</span>
+                    </div>
+                    <p class="descricao-peixe">Peixe de fundo noturno e comedor de algas, precisa de troncos na decoração para auxiliar na digestão.</p>
+                    
+                    <div class="detalhes-grid">
+                        <div class="detalhe-item">
+                            <span class="label">Família</span>
+                            <span class="valor">Loricariidae</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Origem</span>
+                            <span class="valor">América do Sul</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">pH</span>
+                            <span class="valor">6,5 – 7,5</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Dureza</span>
+                            <span class="valor">4 – 12 dGH</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Aquário</span>
+                            <span class="valor">80 L+</span>
+                        </div>
+                        <div class="detalhe-item">
+                            <span class="label">Tamanho</span>
+                            <span class="valor">12 cm</span>
+                        </div>
+                    </div>
+                </div>

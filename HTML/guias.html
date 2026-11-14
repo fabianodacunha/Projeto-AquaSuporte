@@ -1,20 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Informações da página -->
-    <title>AquaSuporte-Guias</title><!-- Nome -->
-    <meta name="description" content="Aba de guias de cuidados."> <!-- Descrição -->
-    <!-- Autor -->
+    <title>AquaSuporte - Guias de Cuidados</title>
+    <meta name="description" content="Guias passo a passo organizados por categoria para aquaristas.">
     <meta name="author" content="Fabiano da Cunha">
     <!-- Ícone da página -->
     <link rel="icon" href="../IMAGENS/LogoAS.png" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/estilo.css">
-    <meta>
+    <link rel="stylesheet" href="../CSS/guias.css">
 </head>
+
 <body>
-    
+    <!-- Cabeçalho com Menu Superior -->
+    <header id="cabesa">
+        <h1>AquaSuporte</h1>
+        <nav class="nav-links">
+            <a href="home.html">Início</a>
+            <a href="calculos.html">Calculadoras</a>
+            <a href="catalogopeixe.html">Catálogo</a>
+            <a href="guias.html" class="active">Guias</a>
+            <a href="loja.html">Loja</a>
+        </nav>
+    </header>
+
+    <!-- Seção de Título do Topo -->
+    <section id="topo-guias">
+        <div class="topo-container">
+            <h2>Guias de cuidados</h2>
+            <p>Passo a passo organizado por categoria.</p>
+        </div>
+    </section>
+
+    <!-- Seção Principal dos Guias -->
+    <main id="conteudo-guias">
+        <div class="guias-container">
+
+            <!-- Lista de Guias -->
+            <div class="guias-lista">
+
+                <!-- Guia 1: Tratando o ictio (Acordeão Nativo) -->
+                <details class="guia-card">
+                    <summary class="guia-header">
+                        <div>
+                            <h3>Tratando o ictio (pontos brancos)</h3>
+                            <p class="guia-sub">Doença parasitária comum após mudanças bruscas de temperatura.</p>
+                        </div>
+                    </summary>
+
+                    <div class="passos-lista">
+                        <div class="passo-item">
+                            <span class="passo-numero">1</span>
+                            <p>Identifique pontos brancos como grãos de sal no corpo e nadadeiras.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">2</span>
+                            <p>Eleve a temperatura gradualmente para 28–30 °C (se as espécies tolerarem).</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">3</span>
+                            <p>Aumente a aeração, pois a água quente tem menos oxigênio.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">4</span>
+                            <p>Aplique medicamento específico seguindo a bula.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">5</span>
+                            <p>Retire o carvão ativado do filtro durante o tratamento.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">6</span>
+                            <p>Faça TPA(Troca Parcial de Água) de 25% a cada 2 a 3 dias e mantenha por 7 dias após sumirem os pontos.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Guia 1: Como fazer um aquario quarentena -->
+                <details class="guia-card">
+                    <summary class="guia-header">
+                        <div>
+                            <h3>Como fazer um aquário quarentena</h3>
+                            <p class="guia-sub">Essencial para isolar peixes novos e evitar surtos de doenças no aquário
+                                principal.</p>
+                        </div>
+                    </summary>
+
+                    <div class="passos-lista">
+                        <div class="passo-item">
+                            <span class="passo-numero">1</span>
+                            <p>Separe um aquário pequeno (de 20 a 40 litros, mas pode mudar denpendendo dos peixes que serão tratados) limpo e dedicado exclusivamente para essa
+                                finalidade.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">2</span>
+                            <p>Instale um filtro simples (de preferência esponja) e um termostato confiável, sem usar
+                                substrato ou enfeites para facilitar a limpeza.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">3</span>
+                            <p>Utilize água do aquário principal na montagem inicial para reduzir o estresse da
+                                adaptação.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">4</span>
+                            <p>Mantenha o peixe em observação por pelo menos 14 a 21 dias, monitorando comportamento e
+                                fezes.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">5</span>
+                            <p>Realize TPA (Troca Parcial de Água) frequentes (a cada 2 dias) e mantenha boa aeração, e caso precise use remedios.
+                            </p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Guia 2: Como fazer um aquario plantado -->
+                <details class="guia-card">
+                    <summary class="guia-header">
+                        <div>
+                            <h3>Como fazer um aquário plantado</h3>
+                            <p class="guia-sub">Crie um ecossistema natural equilibrado e esteticamente impressionante.
+                            </p>
+                        </div>
+                    </summary>
+
+                    <div class="passos-lista">
+                        <div class="passo-item">
+                            <span class="passo-numero">1</span>
+                            <p>Adicione uma camada fértil no fundo (substrato nutritivo) para nutrir as raízes das
+                                plantas.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">2</span>
+                            <p>Cubra o substrato nutritivo com uma camada inerte (como cascalho fino ou areia) para
+                                evitar que a sujeira suba.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">3</span>
+                            <p>Planejamento e plantio: coloque plantas menores na frente e maiores no fundo, fixando-as
+                                com pinças.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">4</span>
+                            <p>Instale uma iluminação de LED adequada ao espectro e exigência das plantas escolhidas.
+                            </p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">5</span>
+                            <p>Inicie a rotina de fertilização líquida e injeção de CO2 (se necessário) após a ciclagem.
+                            </p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Guia 3: Como limpar seu aquario -->
+                <details class="guia-card">
+                    <summary class="guia-header">
+                        <div>
+                            <h3>Como limpar seu aquário</h3>
+                            <p class="guia-sub">Manutenção periódica para garantir água cristalina e peixes saudáveis.
+                            </p>
+                        </div>
+                    </summary>
+
+                    <div class="passos-lista">
+                        <div class="passo-item">
+                            <span class="passo-numero">1</span>
+                            <p>Utilize um sifão para aspirar o fundo do aquário, removendo fezes e restos de ração
+                                acumulados.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">2</span>
+                            <p>Faça uma Troca Parcial de Água (TPA) de 20% a 30% semanal ou quinzenalmente.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">3</span>
+                            <p>Limpe os vidros internos com limpadores magnéticos ou esponjas específicas para aquário
+                                (sem produtos químicos).</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">4</span>
+                            <p>Lave o refil do filtro **apenas** com a própria água retirada do aquário durante a TPA
+                                para não matar as bactérias benéficas.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">5</span>
+                            <p>Complete o aquário com água nova tratada previamente com condicionador (anticloro).</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Guia 4: Como escolher seus peixes -->
+                <details class="guia-card">
+                    <summary class="guia-header">
+                        <div>
+                            <h3>Como escolher seus peixes</h3>
+                            <p class="guia-sub">Garanta a harmonia e o sucesso do seu aquário comunitário.</p>
+                        </div>
+                    </summary>
+
+                    <div class="passos-lista">
+                        <div class="passo-item">
+                            <span class="passo-numero">1</span>
+                            <p>Compatibilidade de parâmetros: verifique se todas as espécies exigem o mesmo pH e faixa
+                                de temperatura.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">2</span>
+                            <p>Temperamento: evite misturar peixes agressivos ou territoriais com espécies pacíficas e
+                                lentas.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">3</span>
+                            <p>Tamanho adulto e litragem: certifique-se de que o aquário tem espaço suficiente para
+                                quando os peixes crescerem.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">4</span>
+                            <p>Verifique a saúde na loja: observe se nadam ativamente, sem manchas brancas, barbatanas
+                                rotas ou respiração acelerada.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">5</span>
+                            <p>Respeite o hábito de cardume: peixes como néons e corydoras devem ser mantidos em grupos
+                                de pelo menos 5 a 6 indivíduos.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Guia 5: Como modificar seu pH -->
+                <details class="guia-card">
+                    <summary class="guia-header">
+                        <div>
+                            <h3>Como modificar seu pH</h3>
+                            <p class="guia-sub">Ajuste a acidez ou alcalinidade da água de forma segura para os
+                                habitantes.</p>
+                        </div>
+                    </summary>
+
+                    <div class="passos-lista">
+                        <div class="passo-item">
+                            <span class="passo-numero">1</span>
+                            <p>Teste a água regularmente com testes em gotas para saber o valor exato do pH atual.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">2</span>
+                            <p>Para **acidificar** (baixar o pH): adicione troncos naturais, folhas secas (como catappa)
+                                ou use produtos acidificantes comerciais em doses graduais.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">3</span>
+                            <p>Para **alcalinizar** (aumentar o pH): utilize rochas calcárias, conchas moídas no
+                                substrato ou produtos alcalinizantes.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">4</span>
+                            <p>Faça alterações de forma muito lenta (no máximo 0,2 pontos por dia) para evitar choques
+                                químicos fatais nos peixes.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Guia 6: Como modificar seu KH -->
+                <details class="guia-card">
+                    <summary class="guia-header">
+                        <div>
+                            <h3>Como modificar seu KH</h3>
+                            <p class="guia-sub">Controle a dureza carbonatada para estabilizar o pH do aquário.</p>
+                        </div>
+                    </summary>
+
+                    <div class="passos-lista">
+                        <div class="passo-item">
+                            <span class="passo-numero">1</span>
+                            <p>Meça o KH (dureza carbonatada) com um teste específico para entender o poder de "tampão"
+                                da sua água.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">2</span>
+                            <p>Para **aumentar o KH** (caso o pH esteja caindo muito rápido): adicione bicarbonato de
+                                sódio em pequenas quantidades medidas ou use tamponadores alcalinos comerciais.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">3</span>
+                            <p>Para **baixar o KH** (água muito dura): dilua a água da torneira com água purificada por
+                                osmose reversa (RO) ou água desmineralizada.</p>
+                        </div>
+                        <div class="passo-item">
+                            <span class="passo-numero">4</span>
+                            <p>Faça as correções de KH antes de tentar estabilizar o pH definitivo, pois um KH muito
+                                baixo causa oscilações perigosas.</p>
+                        </div>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <div id="final">
+        <footer>© 2026 AquaSuporte</footer>
+    </div>
 </body>
+
 </html>

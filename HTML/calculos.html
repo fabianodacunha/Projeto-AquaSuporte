@@ -1,20 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Informações da página -->
-    <title>AquaSuporte-Calculos</title><!-- Nome -->
-    <meta name="description" content="Aba de guias de calculos."> <!-- Descrição -->
-    <!-- Autor -->
+    <title>AquaSuporte - Calculadoras</title>
+    <meta name="description" content="Calculadoras para aquários de água doce.">
     <meta name="author" content="Fabiano da Cunha">
     <!-- Ícone da página -->
     <link rel="icon" href="../IMAGENS/LogoAS.png" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/estilo.css">
-    <meta>
+    <link rel="stylesheet" href="../CSS/calculos.css">
 </head>
+
 <body>
-    
+    <!-- Cabeçalho com Menu Superior -->
+    <header id="cabesa">
+        <h1>AquaSuporte</h1>
+        <nav class="nav-links">
+            <a href="home.html">Início</a>
+            <a href="calculos.html" class="active">Calculadoras</a>
+            <a href="catalogopeixe.html">Catálogo</a>
+            <a href="guias.html">Guias</a>
+            <a href="loja.html">Loja</a>
+        </nav>
+    </header>
+
+    <!-- Seção de Título do Topo -->
+    <section id="topo-calculadoras">
+        <div class="topo-container">
+            <h2>Calculadoras</h2>
+            <p>Todos os cálculos do seu aquário de água doce em uma única página. Os resultados atualizam enquanto você
+                digita.</p>
+        </div>
+    </section>
+
+    <!-- Grade de Calculadoras: O container grandão que segura os cards de cálculo lado a lado -->
+    <main id="conteudo-calculadoras">
+        <div class="calc-grid">
+
+            <!-- 1. Volume de Água -->
+            <div class="calc-card">
+                <h3>Volume de água</h3>
+                <div class="calc-inputs-grupo">
+                    <!-- Caixinha para digitar o comprimento -->
+                    <div class="input-box">
+                        <label>Comprimento</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="vol-comp" value="100">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <!-- Caixinha para a largura -->
+                    <div class="input-box">
+                        <label>Largura</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="vol-larg" value="40">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Altura fica sozinha embaixo ocupando a linha toda -->
+                <div class="input-box full">
+                    <label>Altura</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="vol-alt" value="50">
+                        <span>cm</span>
+                    </div>
+                </div>
+                <!-- Onde a resposta aparece na tela (os IDs ajudam o JS a achar esses textos) -->
+                <div class="resultado-box">
+                    Volume bruto: <strong id="res-vol-bruto">200 L</strong> · útil (~85%): <strong id="res-vol-util">170
+                        L</strong>
+                </div>
+            </div>
+
+            <!-- 2. Vazão do Filtro (mesma lógica de inputs de cima, só mudando os IDs) -->
+            <div class="calc-card">
+                <h3>Vazão do filtro</h3>
+                <div class="calc-inputs-grupo">
+                    <div class="input-box">
+                        <label>Volume do aquário</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="vaz-vol" value="200">
+                            <span>L</span>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label>Trocas por hora (4–10)</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="vaz-trocas" value="5">
+                            <span>x/h</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="resultado-box">
+                    Vazão recomendada: <strong id="res-vazao">1.000 L/h</strong>
+                </div>
+            </div>
+
+            <!-- 3. Quantidade de Substrato -->
+            <div class="calc-card">
+                <h3>Quantidade de substrato</h3>
+                <div class="calc-inputs-grupo">
+                    <div class="input-box">
+                        <label>Comprimento</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="sub-comp" value="100">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label>Largura</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="sub-larg" value="40">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box full">
+                    <label>Altura da camada</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="sub-alt" value="5">
+                        <span>cm</span>
+                    </div>
+                </div>
+                <div class="resultado-box">
+                    Substrato necessário: <strong id="res-sub">20 kg</strong>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+        <script src="../JS/calculos.js" defer></script>
+    </main>
+
+    <!-- Rodapé -->
+    <div id="final">
+        <footer>© 2026 AquaSuporte</footer>
+    </div>
 </body>
+
 </html>

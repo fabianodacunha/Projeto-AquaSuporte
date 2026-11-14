@@ -1,62 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Informações da página -->
-    <title>AquaSuporte-Home</title><!-- Nome -->
-    <meta name="description" content="O site que te ajuda com seu aquario."> <!-- Descrição -->
-    <!-- Autor -->
+    <title>AquaSuporte - Home</title>
+    <meta name="description" content="O site que te ajuda com seu aquário.">
     <meta name="author" content="Fabiano da Cunha">
     <!-- Ícone da página -->
     <link rel="icon" href="../IMAGENS/LogoAS.png" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/estilo.css">
-    <meta>
 </head>
 
 <body>
-    <div id="cabesa">
-        <h1>Aquasuporte</h1>
-    </div>
+    <!-- Cabeçalho com Menu Superior -->
+    <header id="cabesa">
+        <h1>AquaSuporte</h1>
+        <nav class="nav-links">
+            <a href="home.html" class="active">Início</a>
+            <a href="calculos.html">Calculadoras</a>
+            <a href="catalogopeixe.html">Catálogo</a>
+            <a href="guias.html">Guias</a>
+            <a href="loja.html">Loja</a>
+        </nav>
+    </header>
 
-    <div id="conteudosolo">
-            <div id="textoc">
-                <h2> Explore o universo do aquarismo em um só lugar! Encontre informações sobre diferentes espécies de
-                    peixes, aprenda os cuidados necessários, realize cálculos para manter seu aquário em equilíbrio e
-                    encontre produtos para facilitar sua experiência.</h2>
-            </div>
-            <div id="areahome">
-                    <img src="../IMAGENS/pirara.jpg" alt="pirara" width="300" height="200">
-                    <div class="meubotao">
-                        <a href="calculos.html">Matematica de Aquario</a>
-                    </div>
-            </div>
-            <div id="areahome">
-                    <div class="meubotao">
-                          <a href="catalogopeixe.html">Catalogo de Peixes</a>
-                    </div>
-                    <img src="../IMAGENS/pirara.jpg" alt="pirara" width="300" height="200">
-            </div>
-            <div id="areahome">
-                    <img src="../IMAGENS/pirara.jpg" alt="pirara" width="300" height="200">
-                    <div class="meubotao">
-                        <a href="guias.html">Guias de Cuidados</a>
-                    </div>
-            </div>
-            <div id="areahome">
+    <main id="conteudosolo">
+        <!-- Texto de Apresentação -->
+        <div id="textoc">
+            <h2>Explore o universo do aquarismo em um só lugar! Encontre informações sobre diferentes espécies de peixes, aprenda os cuidados necessários, realize cálculos para manter seu aquário em equilíbrio e encontre produtos para facilitar sua experiência.</h2>
+        </div>
+
+        <!-- Bloco 1: Imagem na Esquerda, Botão/Texto na Direita -->
+        <div class="card-secao">
+            <img src="../IMAGENS/Calculo.jpg" alt="Matemática de Aquário">
+            <div class="card-info">
+                <h3>Matemática de Aquário</h3>
+                <p>Realize cálculos precisos de volume, parâmetros e proporções para manter seu ecossistema seguro.</p>
                 <div class="meubotao">
-                        <a href="loja.html">Loja</a>
+                    <a href="calculos.html">Acessar Calculadoras</a>
                 </div>
-                    <img src="../IMAGENS/pirara.jpg" alt="pirara" width="300" height="200">
             </div>
-    </div>
+        </div>
+
+        <!-- Bloco 2: Imagem na Direita, Botão/Texto na Esquerda (usando a classe .inverso) -->
+        <div class="card-secao inverso">
+            <img src="../IMAGENS/aquario.png" alt="Catálogo de Peixes">
+            <div class="card-info">
+                <h3>Catálogo de Peixes</h3>
+                <p>Conheça a família, origem, parâmetros ideais e o convívio de cada espécie de peixe.</p>
+                <div class="meubotao">
+                    <a href="catalogopeixe.html">Ver Catálogo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco 3: Imagem na Esquerda, Botão/Texto na Direita -->
+        <div class="card-secao">
+            <img src="../IMAGENS/guia.png" alt="Guias de Cuidados">
+            <div class="card-info">
+                <h3>Guias de Cuidados</h3>
+                <p>Aprenda o passo a passo sobre saúde, manutenção, criação e montagem de aquários.</p>
+                <div class="meubotao">
+                    <a href="guias.html">Ler Guias</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco 4: Imagem na Direita, Botão/Texto na Esquerda -->
+        <div class="card-secao inverso">
+            <img src="../IMAGENS/Loja.png" alt="Loja">
+            <div class="card-info">
+                <h3>Loja Parceira</h3>
+                <p>Encontre produtos recomendados e saiba onde comprar peixes e acessórios na sua cidade.</p>
+                <div class="meubotao">
+                    <a href="loja.html">Visitar Loja</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
     <div id="final">
         <footer>© 2026 AquaSuporte</footer>
     </div>
-
-
 </body>
 
 </html>

@@ -1,0 +1,137 @@
+/* Bloco do topo da loja */
+#topo-loja {
+    background-color: #002D31;
+    width: 100%;
+    padding: 60px 40px;
+    color: #FAF3E5;
+
+    /* Container centralizado dentro do topo */
+    .topo-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Título dentro do topo */
+    h2 {
+        font-size: 45px;
+        color: #FAF3E5;
+        margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Parágrafo dentro do topo */
+    p {
+        font-size: 16px;
+        color: #A3C1C4;
+        max-width: 600px;
+        line-height: 1.5;
+    }
+}
+
+/* Seção principal da loja */
+#conteudo-loja {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #EBF4F3;
+    display: flex;
+    justify-content: center;
+
+    /* Container principal alinhado da loja */
+    .loja-container {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        /* Título de cada seção dentro da loja */
+        .secao-titulo {
+            font-size: 28px;
+            color: #002D31;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+/* Grade de produtos (3 colunas) */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card individual de cada produto */
+.produto-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 184, 169, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    /* Categoria em texto menor acima do título */
+    .produto-categoria {
+        font-size: 12px;
+        font-weight: 700;
+        color: #007F86;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    /* Bloco de informações do produto */
+    .produto-info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        /* Nome do produto */
+        h4 {
+            font-size: 20px;
+            color: #002D31;
+        }
+
+        /* Descrição do produto */
+        p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.4;
+        }
+    }
+
+    /* Rodapé do card contendo preço e botão */
+    .produto-rodape {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #EBF4F3;
+        padding-top: 15px;
+
+        /* Valor em destaque */
+        .preco {
+            font-size: 20px;
+            font-weight: 700;
+            color: #002D31;
+        }
+
+        /* Botão de interesse */
+        .btn-interesse {
+            background-color: #FFAA5C;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            /* Estado de hover do botão */
+            &:hover {
+                background-color: #e5954b;
+            }
+        }
+    }
+}
